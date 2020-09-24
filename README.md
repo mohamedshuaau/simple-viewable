@@ -33,7 +33,7 @@ php artisan migrate
 ```
 
 In order for your models to be 'viewable', use the trait, `ViewableModel` in your model:
-```
+```php
 <?php
 
 namespace App;
@@ -54,7 +54,7 @@ class Post extends Model
 
 For a more elaborated explanation of the functions, [Read this](./ELABORATED.md).
 
-```
+```php
 //Your post
 $post = Post::find(1);
 
