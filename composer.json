@@ -1,0 +1,29 @@
+{
+    "name": "mohamedshuaau/simple-viewable",
+    "description": "A simple Laravel package which records eloquent model views",
+    "type": "Library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Shuaau",
+            "email": "mohammedshuaau@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Shuaau\\SimpleViewable\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shuaau\\SimpleViewable\\SimpleViewableServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    }
+}
