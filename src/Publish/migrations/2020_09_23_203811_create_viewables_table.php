@@ -18,7 +18,7 @@ class CreateViewablesTable extends Migration
             $table->string('session_id');
             $table->string('viewable_type');
             $table->string('viewable_id');
-            $table->string('expiration_date');
+            $table->string('expiration_date')->default(0);
             $table->timestamps();
         });
     }

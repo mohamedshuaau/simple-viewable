@@ -4,7 +4,6 @@ namespace Shuaau\SimpleViewable\Contracts;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Session;
-use Shuaau\SimpleViewable\Exceptions\CouldNotSerializeException;
 use Shuaau\SimpleViewable\Models\Viewable;
 
 class ViewableContract {
@@ -109,7 +108,7 @@ class ViewableContract {
      * @return bool
      */
     private function hasExpired(): bool {
-        $viewable = Viewable::where('session_id', $this->getSessionId())
+        $viewable = $this->model->views()->where('session_id', $this->getSessionId())
             ->where('expiration_date', '>', Carbon::now())
             ->count();
         return $viewable > 0;
@@ -136,7 +135,7 @@ class ViewableContract {
      * @return bool
      */
     private function viewExists(): bool {
-        return Viewable::where('session_id', $this->getSessionId())->exists();
+        return $this->model->views()->where('session_id', $this->getSessionId())->exists();
     }
 
 }

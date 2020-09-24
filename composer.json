@@ -3,6 +3,13 @@
     "description": "A simple Laravel package which records eloquent model views",
     "type": "Library",
     "license": "MIT",
+    "keywords": [
+        "laravel",
+        "counter",
+        "counts",
+        "views",
+        "model"
+    ],
     "authors": [
         {
             "name": "Mohamed Shuaau",
@@ -10,7 +17,13 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": "^7.2",
+        "illuminate/database": "^6.0|^7.0|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "illuminate/session": "^6.0|^7.0|^8.0",
+        "nesbot/carbon": "^2.0"
+    },
     "autoload": {
         "psr-4": {
             "Shuaau\\SimpleViewable\\": "src/"
