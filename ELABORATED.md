@@ -1,4 +1,4 @@
-###Methods:
+### Methods:
 ##
 If you want to add a view you can simply call the `view()` method:
 ```

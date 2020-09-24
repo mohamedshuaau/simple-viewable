@@ -1,9 +1,9 @@
-##Simple Laravel Viewable
+## Simple Laravel Viewable
 
 This package adds views to your eloquent model. It keeps a record of user visits.
 
 ##
-####Requirements:
+#### Requirements:
 
 This package requires Laravel version >= 6.0 and php version >=7.2. There are 
 no dependencies for this package other than Laravel components. This may
@@ -14,7 +14,7 @@ change in the future.
 | ^1.0      | ^6.0       |
 
 ##
-####Installation:
+#### Installation:
 Use composer to download the package
 ```
 composer require mohamedshuaau/simple-viewable
@@ -50,7 +50,7 @@ class Post extends Model
 
 ```
 ##
-####Basic Usage:
+#### Basic Usage:
 
 For a more elaborated explanation of the functions, [Read this](./ELABORATED.md).
 
