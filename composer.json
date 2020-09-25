@@ -35,7 +35,7 @@
                 "Shuaau\\SimpleViewable\\SimpleViewableServiceProvider"
             ],
             "aliases": {
-
+                "SimpleViewable": "Shuaau\\SimpleViewable\\Facades\\SimpleViewable"
             }
         }
     }
